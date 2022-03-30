@@ -14,7 +14,7 @@ return new class extends Migration
      */
     public function up()
     {
-            DB::statement('CREATE TRIGGER `Hazi` BEFORE INSERT ON `sensoraverages` FOR EACH ROW UPDATE szenzorátlag SET szenzorátlag.átlagfogyasztás = NEW.szenzoradatok.fogyasztás-OLD.szenzoradatok.fogyasztás');
+            DB::statement('CREATE TRIGGER `Hazi` BEFORE INSERT ON `sensoraverages` FOR EACH ROW UPDATE sensoraverages SET sensoraverages.avgconsumption = NEW.szenzoradatok.fogyasztás-OLD.szenzoradatok.fogyasztás');
 
     }
 

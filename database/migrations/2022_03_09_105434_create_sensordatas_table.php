@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger("sensor_id");
             $table->integer("measuredData");
             $table->integer("consumption");
-            $table->integer("consumptionType");
+            $table->string("consumptionType");
 
             $table->foreign('sensor_id')->references('id')->on('sensors')->onDelete('cascade');
         });
