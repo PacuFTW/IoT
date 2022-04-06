@@ -17,9 +17,9 @@ class SensorFactory extends Factory
     public function definition()
     {
         return [
-            'status' => $this->faker()->boolean,
-            'productiontype' => $this->faker()->text,
-            'producedquantity' => $this->faker()->numberBetween(1, 100),
+            'status' => $this->faker->boolean,
+            'productiontype' => $this->faker->text,
+            'producedquantity' => $this->faker->numberBetween(0, 100),
         ];
     }
 }

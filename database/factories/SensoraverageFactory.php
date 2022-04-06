@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Sensordata;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,7 @@ class SensoraverageFactory extends Factory
     public function definition()
     {
         return [
-            'sensordatas_id' => SensordataFactory::all()->random()->id,
+            'sensordatas_id' => Sensordata::all()->random()->id,
         ];
     }
 }

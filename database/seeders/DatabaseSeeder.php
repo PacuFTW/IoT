@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SensorhelperSeeder::class);
         $this->call(EquipmentSeeder::class);
         $this->call(SensorDataSeeder::class);
-        $this->call(SensoravgSeeder::class);
+        //$this->call(SensoravgSeeder::class);
         $this->call(EquipmentAndSensorSupportTableOfAgretgationTableSeeder::class);
     }
 }

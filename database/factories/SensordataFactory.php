@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Sensor;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,7 @@ class SensordataFactory extends Factory
     public function definition()
     {
         return [
-            'sensor_id' => SensorFactory::all()->random()->id,
+            'sensor_id' => Sensor::all()->random()->id,
             'measuredData' => $this->faker->randomDigitNotZero(),
             'consumption' => $this->faker->numberBetween(100, 255),
             'consumptionType' => $this->faker->lexify('??????????'),

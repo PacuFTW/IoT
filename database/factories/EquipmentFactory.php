@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Sensor;
+use App\Models\Site;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,7 +20,8 @@ class EquipmentFactory extends Factory
     {
         return [
             'status' => $this->faker->boolean,
-            'sensor_id' => SensorFactory::all()->random()->id,
+            'site_id' => Site::all()->random()->id,
+            'sensor_id' => Sensor::all()->random()->id,
             'name' => $this->faker->lexify('??????????'),
             'type' => $this->faker->lexify('??????????'),
         ];

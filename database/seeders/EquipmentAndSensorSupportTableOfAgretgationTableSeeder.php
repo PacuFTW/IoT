@@ -15,6 +15,6 @@ class EquipmentAndSensorSupportTableOfAgretgationTableSeeder extends Seeder
      */
     public function run()
     {
-       equipment_and_sensorSupport_table_of_agregation_table::factory()->count(1000)->create();
+       equipment_and_sensorSupport_table_of_agregation_table::factory()->count(10)->create();
     }
 }

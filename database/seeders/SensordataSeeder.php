@@ -15,6 +15,6 @@ class SensordataSeeder extends Seeder
      */
     public function run()
     {
-        Sensordata::factory()->count(1000)->create();
+        Sensordata::factory()->count(10)->create();
     }
 }

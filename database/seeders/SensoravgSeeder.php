@@ -15,6 +15,6 @@ class SensoravgSeeder extends Seeder
      */
     public function run()
     {
-        Sensoraverage::factory()->count(1000)->create();
+        Sensoraverage::factory()->count(10)->create();
     }
 }

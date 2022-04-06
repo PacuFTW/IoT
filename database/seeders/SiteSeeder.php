@@ -15,6 +15,6 @@ class SiteSeeder extends Seeder
      */
     public function run()
     {
-        Site::factory()->count(1000)->create();
+        Site::factory()->count(10)->create();
     }
 }

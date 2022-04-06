@@ -3,11 +3,12 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\Factory as pain;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
  */
-class EquipmentAndSensorSupportTableOfAgretgationTableFactory extends Factory
+class SiteFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +18,8 @@ class EquipmentAndSensorSupportTableOfAgretgationTableFactory extends Factory
     public function definition()
     {
         return [
-            'equipment_id' => EquipmentFactory::all()->random()->id,
-            'helper_id' => SensorhelperFactory::all()->random()->id,
+            'factory_id' => pain::all()->random()->id,
+            'status' => $this->faker->boolean,
         ];
     }
 }
